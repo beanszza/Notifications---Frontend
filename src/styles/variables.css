@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Brand Colors - Kapebara Official */
+  --color-soft-neutral: #FFFFFF;        /* Clean white for cards */
+  --color-neutral-bg: #FCFDFB;          /* Warm off-white main background */
+  --color-primary: #3B302A;             /* Deep coffee brown - Logo & Buttons */
+  --color-text-primary: #1C1C1C;        /* Near-black for text */
+  --color-text-contrast: #F5F5F5;       /* Light text on dark surfaces */
+  --color-text-secondary: #757575;      /* Descriptions, supporting content */
+  --color-text-placeholder: #B3B3B3;    /* Input placeholders, disabled states */
+  
+  /* Status/Notification Colors */
+  --color-success: #2D5F3F;             /* Green for success */
+  --color-info: #FF6B35;                /* Orange for info */
+  --color-warning: #F59E0B;             /* Yellow for warnings */
+  --color-delivery: #3B82F6;            /* Blue for delivery */
+  --color-error: #DC2626;               /* Red for errors */
+  
+  /* Fonts */
+  --font-header: 'DM Sans', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}

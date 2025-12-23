@@ -1,0 +1,186 @@
+.app-container {
+  padding: 40px;
+  background-color: var(--color-neutral-bg);
+  min-height: 100vh;
+}
+
+/* Main Title - DM Sans Bold */
+.main-title {
+  color: var(--color-primary);
+  font-family: var(--font-header);
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Subtitle - Plus Jakarta Sans Regular */
+.subtitle {
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-body);
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid #E0E0E0;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Nav Tab - DM Sans Bold (Buttons/CTA) */
+.nav-tab {
+  flex: 1;
+  padding: 16px 24px;
+  border: none;
+  background: none;
+  font-family: var(--font-header);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-tab:hover {
+  color: var(--color-primary);
+  background-color: rgba(59, 48, 42, 0.05);
+}
+
+.nav-tab.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+  background-color: rgba(59, 48, 42, 0.05);
+}
+
+/* Page Container */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Page Title - DM Sans Bold (Page titles) */
+.page-title {
+  color: var(--color-primary);
+  font-family: var(--font-header);
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* Page Subtitle - DM Sans Regular (Section subtitles) */
+.page-subtitle {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 32px;
+  font-family: var(--font-header);
+  font-weight: 400;
+}
+
+/* Button Grid - ALIGNED */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+/* Demo Buttons - DM Sans Bold (Buttons/CTA text) */
+.demo-btn {
+  border: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: var(--font-header);
+  font-weight: 700;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: var(--color-text-contrast);
+  text-align: left;
+  width: 100%;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.demo-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.demo-btn:active {
+  transform: translateY(0);
+}
+
+.btn-customer {
+  background-color: var(--color-primary);
+}
+
+.btn-customer:hover {
+  background-color: #4A3D35;
+}
+
+.btn-rider {
+  background-color: var(--color-info);
+}
+
+.btn-rider:hover {
+  background-color: #E55A28;
+}
+
+.btn-admin {
+  background-color: var(--color-success);
+}
+
+.btn-admin:hover {
+  background-color: #3A7A52;
+}
+
+/* Toast Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 20px;
+  }
+  
+  .main-title {
+    font-size: 28px;
+  }
+  
+  .button-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .nav-tabs {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  
+  .nav-tab {
+    border-bottom: 1px solid #E0E0E0;
+  }
+  
+  .nav-tab.active {
+    border-left: 4px solid var(--color-primary);
+    border-bottom-color: #E0E0E0;
+  }
+}
